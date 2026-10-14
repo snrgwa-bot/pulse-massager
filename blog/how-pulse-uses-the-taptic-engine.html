@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How PULSE turns your iPhone's Taptic Engine into a massager — PULSE Blog</title>
+  <meta name="description" content="There's a tiny motor inside your iPhone built for precise taps. Here's how PULSE shapes it into 28 different massage rhythms.">
+  <meta name="theme-color" content="#ECEEF6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0C16" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6822376098">
+  <link rel="canonical" href="https://snrgwa-bot.github.io/pulse-massager/blog/how-pulse-uses-the-taptic-engine.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PULSE">
+  <meta property="og:title" content="How PULSE turns your iPhone's Taptic Engine into a massager — PULSE Blog">
+  <meta property="og:description" content="There's a tiny motor inside your iPhone built for precise taps. Here's how PULSE shapes it into 28 different massage rhythms.">
+  <meta property="og:url" content="https://snrgwa-bot.github.io/pulse-massager/blog/how-pulse-uses-the-taptic-engine.html">
+  <meta property="og:image" content="https://snrgwa-bot.github.io/pulse-massager/assets/shots/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="../index.html"><img src="../assets/icon.png" alt="" width="32" height="32"><span>PULSE</span></a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <nav class="primary" id="site-nav" aria-label="Main">
+          <ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#features">Features</a></li><li><a href="../blog/index.html" aria-current="page">Blog</a></li><li><a href="../support.html">Support</a></li><li><a href="../privacy.html">Privacy</a></li><li><a href="../terms.html">Terms</a></li></ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <article class="post">
+        <header class="post-head reveal">
+          <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="18" height="18"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All posts</a>
+          <h1>How PULSE turns your iPhone's Taptic Engine into a massager</h1>
+          <p class="updated"><time datetime="2026-10-09">October 9, 2026</time> · 4 min read · Essential Dev Team</p>
+        </header>
+        <div class="post-cover reveal"><div class="cover cover-2" aria-hidden="true"><svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid slice"><circle cx="250" cy="125" r="18" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="42" stroke="rgba(255,255,255,0.74)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="66" stroke="rgba(255,255,255,0.63)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="90" stroke="rgba(255,255,255,0.52)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="114" stroke="rgba(255,255,255,0.41)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="138" stroke="rgba(255,255,255,0.30)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="162" stroke="rgba(255,255,255,0.19)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="14" fill="#fff"/></svg></div></div>
+        <div class="prose">
+          <img class="inline-shot" src="../assets/shots/app-01-hero.webp" alt="The PULSE home screen with the power disc and Tap to Start" width="720" height="1564">
+          <!-- LIFESTYLE PHOTO SLOT (optional): a licensed photo could replace or sit beside this screenshot. -->
+<p>Inside every recent iPhone is a small part called the <strong>Taptic Engine</strong>. It's the reason a keyboard tap or a toggle switch feels like a crisp little click instead of a buzz. Most apps use it for a split second at a time. PULSE uses it continuously, shaping it into rhythms you can actually feel as a massage.</p>
+
+<h2>What the Taptic Engine is</h2>
+<p>Older phones used a simple spinning weight that could only buzz. The Taptic Engine is a linear actuator: a small mass that moves back and forth very precisely, so it can start and stop almost instantly and play vibrations of different strengths. Apple gives apps access to it through a framework called <strong>Core Haptics</strong>, which lets an app describe a pattern — when each vibration starts, how long it lasts and how strong it is — and play it on the device.</p>
+
+<h2>From a tap to a rhythm</h2>
+<p>Every mode in PULSE is, at heart, a repeating pattern of <strong>vibration</strong> and <strong>pause</strong>, with the strength of each beat varying across the pattern. Change those ingredients and the feeling changes completely:</p>
+<ul>
+  <li><strong>Long vibrations, short pauses</strong> feel like a steady, deep rumble — think <strong>Steady</strong> or <strong>Hum</strong>.</li>
+  <li><strong>Short vibrations, longer pauses</strong> feel like tapping or kneading — think <strong>Pulse</strong> or <strong>Heartbeat</strong>.</li>
+  <li><strong>Beats that rise and fall in strength</strong> feel like waves rolling in — think <strong>Waves</strong>, <strong>Tide</strong> or <strong>Slow Build</strong>.</li>
+</ul>
+<p>PULSE groups its 28 modes into two tabs. <strong>Relax</strong> holds 16 gentler rhythms, from Breeze to Big Cat. <strong>Deep</strong> holds 12 stronger, more varied ones, including the guided <strong>Journey</strong>, which moves through six stages — Settle, Flow, Ease, Rise, Deep and Rest — each with its own rhythm, over about seven minutes.</p>
+
+<h2>Intensity and speed</h2>
+<p>On top of the pattern, two controls change how it feels. <strong>Intensity</strong> (Soft, Medium or Hard) sets how strong each beat is. <strong>Speed</strong> stretches or compresses the timing, so the same mode can feel calm and slow or lively and quick. You can change both while a mode is playing, which makes it easy to dial in what feels right.</p>
+
+<h2>Why the screen stays on</h2>
+<p>iOS only lets apps play haptics while they are in the foreground. That's a sensible rule for battery life and privacy, and it means PULSE keeps the screen on during a session, and the vibration stops if you switch apps or lock the phone. If you don't feel anything at all, check that <strong>Settings › Sounds &amp; Haptics › System Haptics</strong> is on, and note that Low Power Mode can weaken haptics.</p>
+
+<h2>What it is, and what it isn't</h2>
+<p>A phone is not a professional massage device, and PULSE doesn't pretend to be one. The Taptic Engine is small, so the vibration is best on areas where you can rest the phone flat: the tops of the shoulders, the side of the neck, the upper back, calves or the soles of the feet. Vibration strength also depends on your iPhone model and its settings. Long sessions can warm the phone and use battery, which is why PULSE has an auto-off timer.</p>
+<p>And because everything happens on the device, PULSE needs no account, asks for no permissions, and sends nothing about you anywhere. It's just you, your phone, and a rhythm.</p>
+          <p class="note"><strong>Not medical advice.</strong> PULSE is a relaxation app, not a medical device. This article is general information, not a substitute for professional care. Stop if anything feels uncomfortable, and ask a doctor first if you are pregnant, have a pacemaker or other implanted device, or have a medical condition.</p>
+        </div>
+      </article>
+      <section class="post more glass" aria-labelledby="more-title">
+        <h2 id="more-title">Keep reading</h2>
+        <ul><li><a href="unwind-neck-and-shoulders.html">5 ways to unwind your neck and shoulders after a long day</a></li><li><a href="build-your-own-massage-rhythm.html">Build your own massage rhythm in PULSE</a></li></ul>
+        <p><a class="btn primary" href="https://apps.apple.com/app/id6822376098"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Get PULSE on the App Store</a></p>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="fcols">
+        <div class="fbrand">
+          <a class="brand" href="../index.html"><img src="../assets/icon.png" alt="" width="32" height="32"><span>PULSE</span></a>
+          <p>Your iPhone, a massager. 28 rhythms, a guided Journey and your own modes — with no account, no ads and no tracking.</p>
+          <a class="btn primary sm" href="https://apps.apple.com/app/id6822376098"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Download on the App Store</a>
+        </div>
+        <nav aria-label="Product"><h2>Product</h2><ul>
+          <li><a href="../index.html#features">Features</a></li><li><a href="../index.html#journey">Journey</a></li>
+          <li><a href="../index.html#screenshots">Screenshots</a></li><li><a href="../index.html#pricing">Pricing</a></li></ul></nav>
+        <nav aria-label="Resources"><h2>Resources</h2><ul>
+          <li><a href="../blog/index.html">Blog</a></li><li><a href="../faq.html">FAQ</a></li>
+          <li><a href="../support.html">Support</a></li><li><a href="mailto:essentialdevteam@gmail.com?subject=PULSE">Contact</a></li></ul></nav>
+        <nav aria-label="Legal"><h2>Legal</h2><ul>
+          <li><a href="../privacy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms of Use</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple EULA</a></li></ul></nav>
+      </div>
+      <div class="fbottom">
+        <p>© 2026 Essential Dev Team · PULSE</p>
+        <p>A relaxation app, not a medical device.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

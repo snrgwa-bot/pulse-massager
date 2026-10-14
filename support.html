@@ -5,48 +5,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support — PULSE</title>
   <meta name="description" content="PULSE support: contact, reporting bugs, and answers about vibration, Pro, purchases and your data.">
+  <meta name="theme-color" content="#ECEEF6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0C16" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6822376098">
+  <link rel="canonical" href="https://snrgwa-bot.github.io/pulse-massager/support.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PULSE">
+  <meta property="og:title" content="Support — PULSE">
+  <meta property="og:description" content="PULSE support: contact, reporting bugs, and answers about vibration, Pro, purchases and your data.">
+  <meta property="og:url" content="https://snrgwa-bot.github.io/pulse-massager/support.html">
+  <meta property="og:image" content="https://snrgwa-bot.github.io/pulse-massager/assets/shots/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="main.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site">
-    <div class="wrap nav">
-      <a class="brand" href="index.html"><span class="mark"></span> PULSE</a>
-      <nav class="nav-links"><a href="support.html" class="on">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="32" height="32"><span>PULSE</span></a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <nav class="primary" id="site-nav" aria-label="Main">
+          <ul><li><a href="index.html">Home</a></li><li><a href="index.html#features">Features</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="support.html" aria-current="page">Support</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="wrap doc">
-    <h1>Support</h1>
-    <p class="updated">We read every message. Replies usually within a day.</p>
-
-    <div class="support-card">
-      <h3>Contact us</h3>
-      <p>Email <a href="mailto:essentialdevteam@gmail.com?subject=PULSE%20Support">essentialdevteam@gmail.com</a>. Please include your iPhone model, iOS version and the app version (Settings › About › Version) so we can help faster.</p>
-    </div>
-    <div class="support-card">
-      <h3>Report a bug or request a feature</h3>
-      <p>In the app: Settings › Support › <strong>Report a Bug</strong> / <strong>Request a Feature</strong>. Both open a pre-addressed email.</p>
-    </div>
-
-    <h2>Frequently asked questions</h2>
+  <main id="main">
+    <div class="wrap">
+      <header class="page-head center reveal">
+        <span class="eyebrow">Help</span>
+        <h1>Support</h1>
+        <p class="lead">We read every message. Replies usually within a day.</p>
+      </header>
+      <div class="support-grid">
+        <article class="card glass reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></div>
+          <h3>Contact us</h3>
+          <p>Email <a href="mailto:essentialdevteam@gmail.com?subject=PULSE%20Support">essentialdevteam@gmail.com</a>. Please include your iPhone model, iOS version and the app version (Settings › About › Version) so we can help faster.</p>
+          <a class="btn primary" href="mailto:essentialdevteam@gmail.com?subject=PULSE%20Support"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>Email Support</a>
+        </article>
+        <article class="card glass reveal" style="--rd:.08s">
+          <div class="icon peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9a4 4 0 0 1 8 0v5a4 4 0 0 1-8 0z"/><path d="M12 10v8M4 13h4M16 13h4M5 8l3 2M19 8l-3 2M5 19l3-2M19 19l-3-2"/></svg></div>
+          <h3>Report a bug or request a feature</h3>
+          <p>In the app: Settings › Support › <strong>Report a Bug</strong> / <strong>Request a Feature</strong>. Both open a pre-addressed email.</p>
+        </article>
+      </div>
+      <section class="faq-group" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently asked questions</h2>
     <div class="faq">
-      <details><summary>I don't feel any vibration.</summary><p>PULSE needs an iPhone with a Taptic Engine. Check that <strong>Settings › Sounds &amp; Haptics › System Haptics</strong> is on. Low Power Mode can weaken haptics. The screen stays on during a session; vibration stops if you leave the app, because iOS doesn't allow haptics in the background.</p></details>
-      <details><summary>How do I use it?</summary><p>Tap the big button to start. Pick Soft, Medium or Hard, set the speed and an auto-off timer, then choose a mode from <strong>Relax</strong>, <strong>Deep</strong> or <strong>Mine</strong>. Hold the iPhone against your neck, shoulders or back.</p></details>
-      <details><summary>Is PULSE a medical device?</summary><p>No. It's a relaxation app. Stop if anything feels uncomfortable, and ask a doctor first if you are pregnant, have an implanted device or a medical condition.</p></details>
-      <details><summary>What's free, and what's in Pro?</summary><p>Free includes 4 modes (Steady, Waves, Breeze, Pulse), Soft and Medium intensity, and 5-minute sessions. Pro adds every mode including the guided Journey, Hard intensity, timers up to 60 minutes or no limit, and your own custom modes.</p></details>
-      <details><summary>How much is Pro?</summary><p>Weekly $2.99 (with a 3-day free trial for eligible new subscribers), Yearly $19.99, or Lifetime $29.99 once. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Prices may vary by country.</p></details>
-      <details><summary>How do I restore or cancel?</summary><p>Restore on a new iPhone: Settings › <strong>Restore Purchases</strong>. Manage or cancel a subscription: Settings › <strong>Manage Subscription</strong> in the app, or your iPhone's Settings › your name › Subscriptions.</p></details>
-      <details><summary>How do I switch between light and dark?</summary><p>PULSE follows your iPhone's appearance. To choose Light or Dark just for PULSE, tap the appearance button at the top of the main screen.</p></details>
-      <details><summary>Do you collect my data?</summary><p>No. There's no account, no analytics and no ads. Your settings and custom modes stay on your iPhone. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
-      <details><summary>How do I delete my data?</summary><p>Delete a custom mode from Settings › My Modes, or delete the app to remove everything it stored. Nothing is kept anywhere else.</p></details>
+      <details class="glass"><summary>I don't feel any vibration.</summary><p>PULSE needs an iPhone with a Taptic Engine. Check that <strong>Settings › Sounds &amp; Haptics › System Haptics</strong> is on. Low Power Mode can weaken haptics. The screen stays on during a session; vibration stops if you leave the app, because iOS doesn't allow haptics in the background.</p></details>
+      <details class="glass"><summary>How do I use it?</summary><p>Tap the big button to start. Pick Soft, Medium or Hard, set the speed and an auto-off timer, then choose a mode from <strong>Relax</strong>, <strong>Deep</strong> or <strong>Mine</strong>. Hold the iPhone against your neck, shoulders or back.</p></details>
+      <details class="glass"><summary>Is PULSE a medical device?</summary><p>No. It's a relaxation app. Stop if anything feels uncomfortable, and ask a doctor first if you are pregnant, have an implanted device or a medical condition.</p></details>
+      <details class="glass"><summary>What's free, and what's in Pro?</summary><p>Free includes 4 modes (Steady, Waves, Breeze, Pulse), Soft and Medium intensity, and 5-minute sessions. Pro adds every mode including the guided Journey, Hard intensity, timers up to 60 minutes or no limit, and your own custom modes.</p></details>
+      <details class="glass"><summary>How much is Pro?</summary><p>Weekly $2.99 (with a 3-day free trial for eligible new subscribers), Yearly $19.99, or Lifetime $29.99 once. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Prices may vary by country.</p></details>
+      <details class="glass"><summary>How do I restore or cancel?</summary><p>Restore on a new iPhone: Settings › <strong>Restore Purchases</strong>. Manage or cancel a subscription: Settings › <strong>Manage Subscription</strong> in the app, or your iPhone's Settings › your name › Subscriptions.</p></details>
+      <details class="glass"><summary>How do I switch between light and dark?</summary><p>PULSE follows your iPhone's appearance. To choose Light or Dark just for PULSE, tap the appearance button at the top of the main screen.</p></details>
+      <details class="glass"><summary>Do you collect my data?</summary><p>No. There's no account, no analytics and no ads. Your settings and custom modes stay on your iPhone. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
+      <details class="glass"><summary>How do I delete my data?</summary><p>Delete a custom mode from Settings › My Modes, or delete the app to remove everything it stored. Nothing is kept anywhere else.</p></details>
+      <details class="glass"><summary>Does PULSE work on iPad?</summary><p>PULSE is designed for iPhone, which has the Taptic Engine that makes the vibration. It needs iOS 17 or later.</p></details>
+      <details class="glass"><summary>Does it keep vibrating if I lock the screen or switch apps?</summary><p>No. Vibration stops when PULSE leaves the foreground, because iOS doesn't allow haptics in the background. That's why the screen stays on during a session.</p></details>
+      <details class="glass"><summary>What is the Journey?</summary><p>Journey is a guided session in the <strong>Deep</strong> tab. It moves through six stages — Settle, Flow, Ease, Rise, Deep and Rest — each with its own rhythm, and takes about seven minutes. It's part of PULSE Pro.</p></details>
+      <details class="glass"><summary>Can I make my own rhythm?</summary><p>Yes, with PULSE Pro. Open the <strong>Mine</strong> tab and tap <strong>Custom</strong>: pick a base rhythm, set how long each vibration and pause lasts, test it, and save it. Read <a href="blog/build-your-own-massage-rhythm.html">how to build your own rhythm</a>.</p></details>
+      <details class="glass"><summary>Does PULSE need any permissions?</summary><p>No. PULSE asks for no permissions and doesn't use the camera, microphone, location, motion sensors, contacts or health data.</p></details>
+      <details class="glass"><summary>My iPhone gets warm during long sessions.</summary><p>That's normal: long sessions can warm the phone and use battery. Use the auto-off timer, and take a break whenever you like.</p></details>
     </div>
+      </section>
+    </div>
+
   </main>
 
   <footer class="site">
-    <div class="wrap row">
-      <span>© 2026 Essential Dev Team · PULSE</span>
-      <nav class="nav-links"><a href="support.html" class="on">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    <div class="wrap">
+      <div class="fcols">
+        <div class="fbrand">
+          <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="32" height="32"><span>PULSE</span></a>
+          <p>Your iPhone, a massager. 28 rhythms, a guided Journey and your own modes — with no account, no ads and no tracking.</p>
+          <a class="btn primary sm" href="https://apps.apple.com/app/id6822376098"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Download on the App Store</a>
+        </div>
+        <nav aria-label="Product"><h2>Product</h2><ul>
+          <li><a href="index.html#features">Features</a></li><li><a href="index.html#journey">Journey</a></li>
+          <li><a href="index.html#screenshots">Screenshots</a></li><li><a href="index.html#pricing">Pricing</a></li></ul></nav>
+        <nav aria-label="Resources"><h2>Resources</h2><ul>
+          <li><a href="blog/index.html">Blog</a></li><li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Support</a></li><li><a href="mailto:essentialdevteam@gmail.com?subject=PULSE">Contact</a></li></ul></nav>
+        <nav aria-label="Legal"><h2>Legal</h2><ul>
+          <li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple EULA</a></li></ul></nav>
+      </div>
+      <div class="fbottom">
+        <p>© 2026 Essential Dev Team · PULSE</p>
+        <p>A relaxation app, not a medical device.</p>
+      </div>
     </div>
   </footer>
 </body>

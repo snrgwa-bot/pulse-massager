@@ -4,38 +4,328 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PULSE — Your iPhone, a massager</title>
-  <meta name="description" content="PULSE turns your iPhone into a handheld massager: 28 rhythms, three intensities, an auto-off timer and your own custom modes. No account, no ads, no tracking.">
+  <meta name="description" content="PULSE turns your iPhone's Taptic Engine into a handheld body massager: 28 rhythms, a guided Journey, three intensities, an auto-off timer and your own modes. No account, no ads, no tracking.">
+  <meta name="theme-color" content="#ECEEF6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0A0C16" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6822376098">
+  <link rel="canonical" href="https://snrgwa-bot.github.io/pulse-massager/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PULSE">
+  <meta property="og:title" content="PULSE — Your iPhone, a massager">
+  <meta property="og:description" content="PULSE turns your iPhone's Taptic Engine into a handheld body massager: 28 rhythms, a guided Journey, three intensities, an auto-off timer and your own modes. No account, no ads, no tracking.">
+  <meta property="og:url" content="https://snrgwa-bot.github.io/pulse-massager/">
+  <meta property="og:image" content="https://snrgwa-bot.github.io/pulse-massager/assets/shots/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="main.js" defer></script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site">
-    <div class="wrap nav">
-      <a class="brand" href="index.html"><span class="mark"></span> PULSE</a>
-      <nav class="nav-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="32" height="32"><span>PULSE</span></a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <nav class="primary" id="site-nav" aria-label="Main">
+          <ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="index.html#features">Features</a></li><li><a href="blog/index.html">Blog</a></li><li><a href="support.html">Support</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="wrap doc">
-    <h1>Your iPhone, a massager.</h1>
-    <p class="updated">PULSE turns the Taptic Engine into a handheld massager for your neck, shoulders and back.</p>
-    <p style="margin-top:20px"><img src="assets/icon.png" alt="PULSE app icon" width="96" height="96" style="border-radius:22px"></p>
-    <h2>What it does</h2>
-    <ul>
-      <li><strong>28 rhythms</strong> across Relax and Deep — from a gentle breeze to a steady rumble — plus a guided six-stage Journey.</li>
-      <li><strong>Soft, Medium or Hard</strong>, a speed control, and an auto-off timer.</li>
-      <li><strong>Your own modes</strong> — shape the beat and pause, test it, save it.</li>
-      <li><strong>Light or dark</strong>, Dynamic Type and Reduce Motion support.</li>
-    </ul>
-    <h2>Private by design</h2>
-    <p>No account. No ads. No tracking. Your settings stay on your iPhone.</p>
-    <p style="margin-top:24px"><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+  <main id="main">
+    <section class="hero-full" aria-labelledby="hero-title">
+      <div class="mesh" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span></div>
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <span class="eyebrow">PULSE: Vibration Massager</span>
+          <h1 id="hero-title">Your iPhone,<br><span class="grad-text">a massager.</span></h1>
+          <p class="lead">28 soothing rhythms for your neck, shoulders and back — powered by the Taptic Engine already in your pocket.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://apps.apple.com/app/id6822376098"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Download on the App Store</a>
+            <a class="btn ghost" href="#features">Explore Features</a>
+          </div>
+          <p class="small hero-note">Free to download · iPhone · No account needed</p>
+        </div>
+        <div class="device-stage">
+          <span class="ripple"></span><span class="ripple"></span><span class="ripple"></span>
+          <span class="halo" aria-hidden="true"></span>
+          <div class="iphone hero-phone"><img src="assets/shots/app-02-running.webp" alt="PULSE playing the Waves mode at Medium intensity, stopping in 14:58" width="720" height="1564" fetchpriority="high"><span class="island" aria-hidden="true"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="head center reveal">
+          <span class="eyebrow">Features</span>
+          <h2 id="features-title">Simple to start.<br>Deep when you want it.</h2>
+          <p class="lead">One big button, three intensities, and a rhythm for every mood.</p>
+        </div>
+        <div class="bento">
+          <article class="tile glass t4 reveal">
+            <div class="tile-text">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2-4 4-4 6 0s4 4 6 0 4-4 6 0"/><path d="M2 17c2-3 4-3 6 0s4 3 6 0 4-3 6 0" opacity=".55"/></svg></div>
+              <h3>28 rhythms</h3>
+              <p>Sixteen gentle modes in Relax, twelve stronger ones in Deep — from Breeze to Thunder.</p>
+              <div class="bars lg" aria-hidden="true"><i style="--h:0.35;--d:-0.00s"></i><i style="--h:0.6;--d:-0.17s"></i><i style="--h:0.9;--d:-0.34s"></i><i style="--h:0.5;--d:-0.51s"></i><i style="--h:0.75;--d:-0.68s"></i><i style="--h:1;--d:-0.85s"></i><i style="--h:0.45;--d:-1.02s"></i><i style="--h:0.8;--d:-1.19s"></i><i style="--h:0.3;--d:-1.36s"></i><i style="--h:0.65;--d:-1.53s"></i><i style="--h:0.95;--d:-0.10s"></i><i style="--h:0.55;--d:-0.27s"></i></div>
+            </div>
+            <div class="crop"><img src="assets/shots/app-03-relax.webp" alt="The Relax tab with a grid of massage modes" width="720" height="1564" loading="lazy" style="object-position:center 62%"></div>
+          </article>
+          <article class="tile glass t2 reveal" style="--rd:.06s">
+            <div class="icon peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></svg></div>
+            <h3>Guided Journey</h3>
+            <p>Six stages that change the rhythm for you, in about seven minutes.</p>
+            <ol class="mini-stages" aria-label="Journey stages"><li>Settle</li><li>Flow</li><li>Ease</li><li>Rise</li><li>Deep</li><li>Rest</li></ol>
+          </article>
+          <article class="tile glass t2 reveal">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18a8 8 0 1 1 16 0"/><path d="M12 18l4-5"/></svg></div>
+            <h3>Soft, Medium, Hard</h3>
+            <p>Choose how firm each beat feels.</p>
+            <div class="seg" aria-hidden="true"><span>Soft</span><span class="on">Medium</span><span>Hard</span></div>
+          </article>
+          <article class="tile glass t2 reveal" style="--rd:.06s">
+            <div class="icon peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></div>
+            <h3>Speed control</h3>
+            <p>Calmer or livelier, while it plays.</p>
+            <div class="fake-slider" aria-hidden="true"><span></span></div>
+          </article>
+          <article class="tile glass t2 reveal" style="--rd:.12s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9.5 2.5h5"/></svg></div>
+            <h3>Auto-off timer</h3>
+            <p>5, 15, 30 or 60 minutes, or no limit.</p>
+            <div class="seg" aria-hidden="true"><span>5</span><span class="on">15</span><span>30</span><span>60</span><span>Off</span></div>
+          </article>
+          <article class="tile glass t3 reveal">
+            <div class="tile-text">
+              <div class="icon peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><path d="M12 8v8M8 12h8"/></svg></div>
+              <h3>Your own modes</h3>
+              <p>Shape the beat and the pause, test it, save it to Mine.</p>
+            </div>
+            <div class="crop"><img src="assets/shots/app-06-editor.webp" alt="The New Mode editor with rhythm, vibration and pause controls" width="720" height="1564" loading="lazy" style="object-position:center 8%"></div>
+          </article>
+          <article class="tile glass t3 reveal" style="--rd:.06s">
+            <div class="tile-text">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div>
+              <h3>Light or dark</h3>
+              <p>Follows your iPhone, or pick a look just for PULSE.</p>
+            </div>
+            <div class="crop"><img src="assets/shots/app-07-dark.webp" alt="PULSE in dark mode" width="720" height="1564" loading="lazy" style="object-position:center 4%"></div>
+          </article>
+          <article class="tile glass t3 reveal">
+            <div class="icon peach"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8.5l7 1.5 7-1.5M12 10v4.5M9 21l3-6.5 3 6.5"/></svg></div>
+            <h3>Made for everyone</h3>
+            <p>Dynamic Type and Reduce Motion support, with large, easy targets.</p>
+          </article>
+          <article class="tile glass t3 reveal" style="--rd:.06s">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="3"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div>
+            <h3>Private by design</h3>
+            <p>No account, no ads, no tracking. Your settings stay on your iPhone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="rhythms-title">
+      <div class="wrap split">
+        <div class="reveal phone-col"><div class="iphone "><img src="assets/shots/app-03-relax.webp" alt="The PULSE Relax tab showing massage modes" width="720" height="1564" loading="lazy"><span class="island" aria-hidden="true"></span></div></div>
+        <div class="reveal">
+          <span class="eyebrow">Relax · Deep · Mine</span>
+          <h2 id="rhythms-title">A rhythm for<br>every mood.</h2>
+          <p class="lead">Every mode has its own beat and pause. Switch while it plays and feel the difference instantly — a gentle Breeze, a rolling Tide, a deep Rumble.</p>
+          <div class="rhythm-viz glass" aria-hidden="true">
+            <div class="bars xl" aria-hidden="true"><i style="--h:0.3;--d:-0.00s"></i><i style="--h:0.55;--d:-0.17s"></i><i style="--h:0.8;--d:-0.34s"></i><i style="--h:1;--d:-0.51s"></i><i style="--h:0.7;--d:-0.68s"></i><i style="--h:0.45;--d:-0.85s"></i><i style="--h:0.6;--d:-1.02s"></i><i style="--h:0.9;--d:-1.19s"></i><i style="--h:0.65;--d:-1.36s"></i><i style="--h:0.35;--d:-1.53s"></i><i style="--h:0.75;--d:-0.10s"></i><i style="--h:0.5;--d:-0.27s"></i><i style="--h:0.85;--d:-0.44s"></i><i style="--h:0.4;--d:-0.61s"></i><i style="--h:0.7;--d:-0.78s"></i><i style="--h:0.95;--d:-0.95s"></i></div>
+            <div class="rv-label"><b>Waves</b><span>Medium · 55%</span></div>
+          </div>
+          <p class="small">Start free with Steady, Waves, Breeze and Pulse. PULSE Pro unlocks all 28.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="journey" aria-labelledby="journey-title">
+      <div class="wrap split flip">
+        <div class="reveal phone-col"><div class="iphone "><img src="assets/shots/app-04-journey.webp" alt="PULSE playing the guided Journey, Settle stage 1 of 6" width="720" height="1564" loading="lazy"><span class="island" aria-hidden="true"></span></div></div>
+        <div class="reveal">
+          <span class="eyebrow">Guided Journey</span>
+          <h2 id="journey-title">Six stages.<br>One calm session.</h2>
+          <p class="lead">Not sure what to pick? Start the Journey. It eases in, builds, and settles back down on its own.</p>
+          <ol class="timeline" aria-label="The six Journey stages"><li style="--i:0"><span class="node" aria-hidden="true"></span><b>Settle</b><span>Ease in slowly</span></li><li style="--i:1"><span class="node" aria-hidden="true"></span><b>Flow</b><span>Find a rhythm</span></li><li style="--i:2"><span class="node" aria-hidden="true"></span><b>Ease</b><span>Light, quick taps</span></li><li style="--i:3"><span class="node" aria-hidden="true"></span><b>Rise</b><span>Build gently</span></li><li style="--i:4"><span class="node" aria-hidden="true"></span><b>Deep</b><span>The strongest stretch</span></li><li style="--i:5"><span class="node" aria-hidden="true"></span><b>Rest</b><span>Wind down</span></li></ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="custom-title">
+      <div class="wrap split">
+        <div class="reveal phone-col"><div class="iphone "><img src="assets/shots/app-06-editor.webp" alt="The PULSE custom mode editor" width="720" height="1564" loading="lazy"><span class="island" aria-hidden="true"></span></div></div>
+        <div class="reveal">
+          <span class="eyebrow">Mine</span>
+          <h2 id="custom-title">Make a mode<br>that's yours.</h2>
+          <p class="lead">Choose Steady, Ramp, Double or Random, set the length of each vibration and pause, and test it before you save.</p>
+          <a class="link-arrow" href="blog/build-your-own-massage-rhythm.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="screenshots" aria-labelledby="shots-title">
+      <div class="wrap">
+        <div class="head center reveal">
+          <span class="eyebrow">Screenshots</span>
+          <h2 id="shots-title">See it in action.</h2>
+        </div>
+      </div>
+      <div class="carousel-wrap">
+        <ul class="gallery" aria-label="App screenshots, scroll sideways for more" tabindex="0">
+          <li><figure><img src="assets/shots/framed-01-hero.webp" alt="PULSE screenshot: Tap once and relax" width="640" height="1385" loading="lazy"><figcaption>Tap once and relax</figcaption></figure></li>
+          <li><figure><img src="assets/shots/framed-02-running.webp" alt="PULSE screenshot: Feel it while it plays" width="640" height="1385" loading="lazy"><figcaption>Feel it while it plays</figcaption></figure></li>
+          <li><figure><img src="assets/shots/framed-03-modes.webp" alt="PULSE screenshot: 28 rhythms" width="640" height="1385" loading="lazy"><figcaption>28 rhythms</figcaption></figure></li>
+          <li><figure><img src="assets/shots/framed-04-journey.webp" alt="PULSE screenshot: A guided Journey" width="640" height="1385" loading="lazy"><figcaption>A guided Journey</figcaption></figure></li>
+          <li><figure><img src="assets/shots/framed-05-controls.webp" alt="PULSE screenshot: Intensity, speed and timer" width="640" height="1385" loading="lazy"><figcaption>Intensity, speed and timer</figcaption></figure></li>
+          <li><figure><img src="assets/shots/framed-06-custom.webp" alt="PULSE screenshot: Build your own mode" width="640" height="1385" loading="lazy"><figcaption>Build your own mode</figcaption></figure></li>
+          <li><figure><img src="assets/shots/framed-07-themes.webp" alt="PULSE screenshot: Light or dark" width="640" height="1385" loading="lazy"><figcaption>Light or dark</figcaption></figure></li>
+        </ul>
+      </div>
+      <div class="wrap">
+        <!-- LIFESTYLE PHOTO SLOT: replace this app image with a real, licensed photo of someone
+             holding an iPhone to their neck or shoulder (16:9, ~1600px wide, WebP ≤ 250 KB). -->
+        <figure class="wide-shot reveal">
+          <img src="assets/shots/header.webp" alt="Three iPhones showing PULSE: the mode grid, the Waves mode playing, and the Journey" width="1600" height="900" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="block" id="privacy" aria-labelledby="private-title">
+      <div class="wrap">
+        <div class="band glass reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="3"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></div>
+          <h2 id="private-title">Private by design.</h2>
+          <p class="lead">No account. No ads. No tracking. Our App Store privacy label is <strong>Data Not Collected</strong>.</p>
+          <div class="pills">
+            <div class="pill"><b>0</b><span>accounts</span></div>
+            <div class="pill"><b>0</b><span>ads</span></div>
+            <div class="pill"><b>0</b><span>trackers</span></div>
+            <div class="pill"><b>0</b><span>permissions</span></div>
+          </div>
+          <a class="link-arrow" href="privacy.html">Read the Privacy Policy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <div class="head center reveal">
+          <span class="eyebrow">PULSE Pro</span>
+          <h2 id="pricing-title">Try it free.<br>Go Pro when you're ready.</h2>
+          <p class="lead">Free includes 4 modes, Soft and Medium, and 5-minute sessions. Pro unlocks all 28 modes including Journey, Hard intensity, timers up to 60 minutes or no limit, and unlimited custom modes.</p>
+        </div>
+        <div class="prices">
+          <article class="price glass reveal">
+            <span class="tag">Weekly</span>
+            <div class="amt">$2.99</div>
+            <span class="per">per week</span>
+            <p>3-day free trial for eligible new subscribers.</p>
+            <a class="btn ghost" href="https://apps.apple.com/app/id6822376098">Start Free Trial</a>
+          </article>
+          <article class="price glass featured reveal" style="--rd:.08s">
+            <span class="badge">Best value</span>
+            <span class="tag">Yearly</span>
+            <div class="amt">$19.99</div>
+            <span class="per">per year</span>
+            <p>A full year of PULSE Pro, auto-renewing.</p>
+            <a class="btn primary" href="https://apps.apple.com/app/id6822376098">Get Yearly</a>
+          </article>
+          <article class="price glass reveal" style="--rd:.16s">
+            <span class="tag">Lifetime</span>
+            <div class="amt">$29.99</div>
+            <span class="per">one time</span>
+            <p>A one-time purchase that does not renew.</p>
+            <a class="btn ghost" href="https://apps.apple.com/app/id6822376098">Get Lifetime</a>
+          </article>
+        </div>
+        <p class="fine">Payment is charged to your Apple Account when you confirm the purchase, or when the free trial ends. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period; your account is charged for renewal within 24 hours before the period ends. You can manage or cancel a subscription in your iPhone's Settings › your name › Subscriptions. Any unused part of a free trial ends when you buy a subscription. Prices may vary by country and are always shown in the app before you buy. Refunds are handled by Apple. Family Sharing is not available for PULSE Pro. See the <a href="terms.html">Terms of Use</a>.</p>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <div class="head center reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2 id="faq-title">Quick answers.</h2>
+        </div>
+        <div class="reveal">
+    <div class="faq">
+      <details class="glass"><summary>I don't feel any vibration.</summary><p>PULSE needs an iPhone with a Taptic Engine. Check that <strong>Settings › Sounds &amp; Haptics › System Haptics</strong> is on. Low Power Mode can weaken haptics. The screen stays on during a session; vibration stops if you leave the app, because iOS doesn't allow haptics in the background.</p></details>
+      <details class="glass"><summary>How do I use it?</summary><p>Tap the big button to start. Pick Soft, Medium or Hard, set the speed and an auto-off timer, then choose a mode from <strong>Relax</strong>, <strong>Deep</strong> or <strong>Mine</strong>. Hold the iPhone against your neck, shoulders or back.</p></details>
+      <details class="glass"><summary>Is PULSE a medical device?</summary><p>No. It's a relaxation app. Stop if anything feels uncomfortable, and ask a doctor first if you are pregnant, have an implanted device or a medical condition.</p></details>
+      <details class="glass"><summary>What's free, and what's in Pro?</summary><p>Free includes 4 modes (Steady, Waves, Breeze, Pulse), Soft and Medium intensity, and 5-minute sessions. Pro adds every mode including the guided Journey, Hard intensity, timers up to 60 minutes or no limit, and your own custom modes.</p></details>
+      <details class="glass"><summary>How much is Pro?</summary><p>Weekly $2.99 (with a 3-day free trial for eligible new subscribers), Yearly $19.99, or Lifetime $29.99 once. Subscriptions renew automatically unless cancelled at least 24 hours before the period ends. Prices may vary by country.</p></details>
+    </div>
+        </div>
+        <p class="center-row"><a class="link-arrow" href="faq.html">All questions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="blog-title">
+      <div class="wrap">
+        <div class="head center reveal">
+          <span class="eyebrow">From the blog</span>
+          <h2 id="blog-title">Unwind a little smarter.</h2>
+        </div>
+    <div class="grid three">
+      <a class="post-card glass reveal" style="--rd:0.00s" href="blog/unwind-neck-and-shoulders.html">
+        <div class="cover cover-1" aria-hidden="true"><svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid slice"><path d="M-20 60 C 80 20, 160 100, 260 60 S 440 20, 520 60" stroke="rgba(255,255,255,0.75)" stroke-width="3" fill="none"/><path d="M-20 82 C 80 42, 160 122, 260 82 S 440 42, 520 82" stroke="rgba(255,255,255,0.65)" stroke-width="3" fill="none"/><path d="M-20 104 C 80 64, 160 144, 260 104 S 440 64, 520 104" stroke="rgba(255,255,255,0.55)" stroke-width="3" fill="none"/><path d="M-20 126 C 80 86, 160 166, 260 126 S 440 86, 520 126" stroke="rgba(255,255,255,0.45)" stroke-width="3" fill="none"/><path d="M-20 148 C 80 108, 160 188, 260 148 S 440 108, 520 148" stroke="rgba(255,255,255,0.35)" stroke-width="3" fill="none"/><path d="M-20 170 C 80 130, 160 210, 260 170 S 440 130, 520 170" stroke="rgba(255,255,255,0.25)" stroke-width="3" fill="none"/></svg></div>
+        <div class="body"><span class="meta"><time datetime="2026-10-06">October 6, 2026</time> · 4 min read</span><h3>5 ways to unwind your neck and shoulders after a long day</h3><p>Desk days and phone time pile tension into the same few muscles. Here are five easy habits for the evening, and where a gentle vibration fits in.</p></div>
+      </a>
+      <a class="post-card glass reveal" style="--rd:0.08s" href="blog/how-pulse-uses-the-taptic-engine.html">
+        <div class="cover cover-2" aria-hidden="true"><svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid slice"><circle cx="250" cy="125" r="18" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="42" stroke="rgba(255,255,255,0.74)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="66" stroke="rgba(255,255,255,0.63)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="90" stroke="rgba(255,255,255,0.52)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="114" stroke="rgba(255,255,255,0.41)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="138" stroke="rgba(255,255,255,0.30)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="162" stroke="rgba(255,255,255,0.19)" stroke-width="2.5" fill="none"/><circle cx="250" cy="125" r="14" fill="#fff"/></svg></div>
+        <div class="body"><span class="meta"><time datetime="2026-10-09">October 9, 2026</time> · 4 min read</span><h3>How PULSE turns your iPhone's Taptic Engine into a massager</h3><p>There's a tiny motor inside your iPhone built for precise taps. Here's how PULSE shapes it into 28 different massage rhythms.</p></div>
+      </a>
+      <a class="post-card glass reveal" style="--rd:0.16s" href="blog/build-your-own-massage-rhythm.html">
+        <div class="cover cover-3" aria-hidden="true"><svg viewBox="0 0 500 250" preserveAspectRatio="xMidYMid slice"><rect x="82" y="148" width="14" height="52" rx="7" fill="rgba(255,255,255,0.69)"/><rect x="108" y="110" width="14" height="90" rx="7" fill="rgba(255,255,255,0.79)"/><rect x="134" y="65" width="14" height="135" rx="7" fill="rgba(255,255,255,0.91)"/><rect x="160" y="125" width="14" height="75" rx="7" fill="rgba(255,255,255,0.75)"/><rect x="186" y="88" width="14" height="112" rx="7" fill="rgba(255,255,255,0.85)"/><rect x="212" y="50" width="14" height="150" rx="7" fill="rgba(255,255,255,0.95)"/><rect x="238" y="133" width="14" height="67" rx="7" fill="rgba(255,255,255,0.73)"/><rect x="264" y="80" width="14" height="120" rx="7" fill="rgba(255,255,255,0.87)"/><rect x="290" y="155" width="14" height="45" rx="7" fill="rgba(255,255,255,0.67)"/><rect x="316" y="103" width="14" height="97" rx="7" fill="rgba(255,255,255,0.81)"/><rect x="342" y="58" width="14" height="142" rx="7" fill="rgba(255,255,255,0.93)"/><rect x="368" y="118" width="14" height="82" rx="7" fill="rgba(255,255,255,0.77)"/><rect x="394" y="140" width="14" height="60" rx="7" fill="rgba(255,255,255,0.71)"/></svg></div>
+        <div class="body"><span class="meta"><time datetime="2026-10-12">October 12, 2026</time> · 4 min read</span><h3>Build your own massage rhythm in PULSE</h3><p>Can't find the exact feel you want? The custom mode editor lets you shape the beat and the pause yourself. A step-by-step guide with three recipes to try.</p></div>
+      </a>
+    </div>
+      </div>
+    </section>
+
+    <section class="block" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="band cta-band reveal">
+          <div class="mesh" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+          <div class="mini-disc" aria-hidden="true"><span class="ripple"></span><span class="ripple"></span><div class="disc"><div class="core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2.6"><path d="M12 3v8"/><path d="M6.3 6.8a8 8 0 1 0 11.4 0"/></svg></div></div></div>
+          <h2 id="cta-title">Tap once. Relax.</h2>
+          <p class="lead">PULSE is free to download for iPhone.</p>
+          <a class="btn primary" href="https://apps.apple.com/app/id6822376098"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Download on the App Store</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site">
-    <div class="wrap row">
-      <span>© 2026 Essential Dev Team · PULSE</span>
-      <nav class="nav-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+    <div class="wrap">
+      <div class="fcols">
+        <div class="fbrand">
+          <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="32" height="32"><span>PULSE</span></a>
+          <p>Your iPhone, a massager. 28 rhythms, a guided Journey and your own modes — with no account, no ads and no tracking.</p>
+          <a class="btn primary sm" href="https://apps.apple.com/app/id6822376098"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14"/></svg>Download on the App Store</a>
+        </div>
+        <nav aria-label="Product"><h2>Product</h2><ul>
+          <li><a href="index.html#features">Features</a></li><li><a href="index.html#journey">Journey</a></li>
+          <li><a href="index.html#screenshots">Screenshots</a></li><li><a href="index.html#pricing">Pricing</a></li></ul></nav>
+        <nav aria-label="Resources"><h2>Resources</h2><ul>
+          <li><a href="blog/index.html">Blog</a></li><li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Support</a></li><li><a href="mailto:essentialdevteam@gmail.com?subject=PULSE">Contact</a></li></ul></nav>
+        <nav aria-label="Legal"><h2>Legal</h2><ul>
+          <li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple EULA</a></li></ul></nav>
+      </div>
+      <div class="fbottom">
+        <p>© 2026 Essential Dev Team · PULSE</p>
+        <p>A relaxation app, not a medical device.</p>
+      </div>
     </div>
   </footer>
 </body>
