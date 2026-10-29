@@ -54,9 +54,14 @@
     <ul>
       <li><strong>Your choices</strong> — intensity, speed, auto-off timer, the last mode you used and your appearance setting.</li>
       <li><strong>Custom modes</strong> you create (name and rhythm).</li>
-      <li><strong>A count of completed sessions</strong>, used only once to ask whether you'd like to rate the app.</li>
+      <li><strong>Usage counters</strong> — how many sessions you've completed, when you first opened the app, and whether we've already asked you to rate or share it, so those requests come at a sensible time and never repeat. Whether you've seen the intro.</li>
+      <li><strong>A diagnostic log</strong> — recent technical events (sessions starting and stopping, vibration-engine status, errors), kept in memory only and cleared when the app closes. It never contains your custom mode names or anything you type.</li>
+      <li><strong>Crash and hang reports</strong> that iOS gives the app (Apple's MetricKit), the last five, kept in the app's private storage.</li>
     </ul>
-    <p>These are saved in the app's private storage on your iPhone. They are never sent to us — the custom mode names you type are never included in usage statistics. They are included in your normal iCloud or computer backup of the phone, and they are removed when you delete the app.</p>
+    <p>These stay in the app's private storage on your iPhone and are never sent to us on their own. They are included in your normal iCloud or computer backup of the phone, and they are removed when you delete the app.</p>
+
+    <h3>When you report a bug</h3>
+    <p>Settings › Support › Report a Bug opens an email to us that you can read before sending. It includes the app version, iOS version, iPhone model, whether you have PULSE Pro, the current mode and intensity, and the diagnostic log and crash reports above. Nothing is sent until you tap Send, and you can delete anything from the email first.</p>
 
     <h2 id="vibration">Vibration <a class="anchor" href="#vibration" aria-label="Link to this section">#</a></h2>
     <p>Massage patterns are played on your iPhone's Taptic Engine using Apple's Core Haptics. PULSE does not use the camera, microphone, location, motion sensors, contacts or health data, and asks for no permissions.</p>
